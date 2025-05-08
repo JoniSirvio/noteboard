@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notelist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1><a href="Index.html">Notelist</a></h1>
+    </header>
+    <input type="text" id="noteInput" placeholder="Enter your note">
+    <button onclick="addListNote()">Add</button>
+    <div id="noteListsWrapper">
+        <div class="list-section">
+          <h3>To do</h3>
+          <ul id="todoList"></ul>
+        </div>
+        <div class="list-section">
+          <h3>Done</h3>
+          <ul id="doneList"></ul>
+        </div>
+      </div>
+    <script type="module" src="./js/notelist.js"></script>
+</body>
+</html>

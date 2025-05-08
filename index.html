@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noteboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1><a href="notelist.html">Noteboard</a></h1>
+    </header>
+    <input type="text" id="noteInput" placeholder="Enter your note">
+    <button onclick="addNote()">Add</button>
+    <h3>Notes:</h3>
+    <div id="noteList"></div>
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+          <textarea id="editTextarea"></textarea>
+          <div class="modal-buttons">
+            <button id="saveBtn">Save</button>
+            <button id="cancelBtn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    <script type="module" src="./js/noteboard.js"></script>
+</body>
+</html>
