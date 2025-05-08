@@ -12,4 +12,10 @@
     .note {
         margin: 0 auto;
     }
+      
+      .modal-content {
+        width: 90vw;
+        height: 90vw;
+        aspect-ratio: 1/1;
+      }
 }
